@@ -1,0 +1,224 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(90deg,#210D10,#802201);
+}
+#navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+#navbar img{
+    height: 100px;
+    width: 200px;
+}
+#list{
+    display: flex;
+    align-items: center;
+    margin-right: 4vw;
+}
+#list li{
+    list-style: none;
+}
+#lang{
+    width: 78px;
+    height: 49px;
+    border: inset 1px white;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 2vw;
+}
+#signbtn{
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 75px;
+    font-weight: 200;
+    font-size: 17px;
+    border: inset 2px red;
+    border-radius: 5px;
+}
+img{
+    padding: 10px;
+    border-radius: 20px;
+}
+/*-------------------------------------------------*/
+.container{
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+}
+.leftcont{
+    width: 45%;
+    height: 60vh;
+    float: left;
+    background-image:linear-gradient(90deg,#802201,#040720);
+}
+.imgcont{
+    width: 55%;
+    height: 60vh;
+    float: right;
+    background-size: 100% 100%;
+}
+#imgcont1
+{
+    background-image: url('https://wallpaperaccess.com/full/712422.jpg');
+}
+#imgcont2{
+    background-image: url('https://woottoncommonsense.com/wp-content/uploads/2020/12/RgOWIjNBqW2ASCmQ3wuGb5GAYnDSRHd1EMipCwJI.jpeg');
+}
+#imgcont3{
+    background-image: url('https://www.syfy.com/sites/syfy/files/2022/07/jwcc_key_art_s5_horizontal_jul_21.jpg');
+}
+#imgcont4{
+    background-image: url('https://headlineplanet.com/home/wp-content/uploads/2020/04/Money-Heist-Part-4-Poster-via-Netflix.jpg');
+}
+#imgcont5{
+    background-image: url('https://www.easemytrip.com/travel/img/sacred-games.jpg');
+}
+.leftcontent{
+   width: 70%;
+   height: 40vh;
+   margin-left: 3vw;
+   margin-top: calc(15vh/2);
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   display: flex;
+   flex-direction: column;
+}
+.listitems{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    margin-top: 2vh;
+}
+.listitems li{
+    font-size: 1.2vw;
+}
+.listitems li:first-of-type{
+    list-style: none;
+}
+.leftcontent p{
+    font-weight:500;
+    margin-top: 8vh;
+    font-size: 1.2vw;
+}
+main{
+    position: relative;
+    z-index: -1;
+    width: 90%;
+    height: 85vh;
+    margin: auto;
+    margin-top: 102px;
+    overflow: hidden;
+}
+.container{
+   position: absolute;
+   transition: 1s;
+}
+.btn{
+    position: absolute;
+    /*z-index:-1;*/
+    font-size: 1vw;
+    color: grey;
+    background-color: #802201;
+    border: none;
+}
+#btn1{
+    right: 3vw;
+    top: 38vh;
+}
+#btn2{
+    left: 3vw;
+    top: 38vh;
+    background-color: rgb(40, 5, 5);
+}
+#latesthead,#latest,#rechead,#rec{
+    color: white;
+    font-weight:lighter;
+    width: 90%;
+    /*background-color: silver;*/
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+}
+#latesthead,#rechead{
+  height: 30px;
+}
+#latest,#rec{
+    width: 100%;
+    height: 45vh;
+    /*background-color: aqua;*/
+    display: grid;
+    place-items: center;
+    margin-bottom: 1vh;
+}
+#centerdiv,#centerdiv2{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#centerdiv::-webkit-scrollbar{
+   overflow: hidden;
+}
+#centerdiv2::-webkit-scrollbar{
+    overflow: hidden;
+}
+.netimages{
+   width: 26vw;
+   height: 39vh;
+   object-fit: cover;
+}
+.firsthr{
+    border: inset 6px grey;
+}
+#secondcont,#thirdcont{
+    background-color: black;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#secondcontimg{
+    height: 60vh;
+    width: 40vw;
+    display: block;
+    margin-top: 10vh;
+}
+#secondinn,#thirdinn{
+    height: 40vh;
+    width: 30vw;
+    margin: auto;
+}
+#preview1,#preview3{
+    color: white;
+    font-size: 3vw;
+}
+#preview2,#preview4{
+   color: grey;
+   font-size: 1.5vw;
+   margin-top: 2em;
+}
+#table{
+    display: block;
+    color: grey;
+    background-color: black;
+}
+.cell{
+    margin-left: 2vw;
+    text-align: center;
+}
+/*https://wallpaperaccess.com/full/712422.jpg*/
+/*<i class="fa-thin fa-arrow-right"></i>*/
