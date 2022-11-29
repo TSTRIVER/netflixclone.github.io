@@ -56,7 +56,7 @@ img{
 /*-------------------------------------------------*/
 .container{
     width: 100%;
-    height: 60vh;
+    height: 60vw;
     margin: auto;
 }
 .leftcont{
@@ -105,7 +105,7 @@ img{
     margin-top: 2vh;
 }
 .listitems li{
-    font-size: 1.2vw;
+    font-size: 16px;
 }
 .listitems li:first-of-type{
     list-style: none;
@@ -130,11 +130,14 @@ main{
 }
 .btn{
     position: absolute;
-    z-index:-1;
+    /*z-index:-1;*/
     font-size: 1vw;
     color: grey;
     background-color: #802201;
     border: none;
+}
+.btn:hover{
+    cursor: pointer;
 }
 #btn1{
     right: 3vw;
@@ -204,11 +207,11 @@ main{
 }
 #preview1,#preview3{
     color: white;
-    font-size: 3vw;
+    font-size: 30px;
 }
 #preview2,#preview4{
    color: grey;
-   font-size: 1.5vw;
+   font-size: 22px;
    margin-top: 2em;
 }
 #table{
@@ -223,7 +226,55 @@ main{
 .imgcont{
     object-fit: cover;
 }
-@media (min-width: 950px){
+@media (max-width : 1040px){
+    .listitems li{
+        font-size: 10px;
+    }
+    .leftcontent p{
+        font-size: 12px;
+    }
+}
+@media (max-width : 650px){
+    .listitems{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .leftcontent p{
+        font-size: 9px;
+    }
+    #preview1,#preview3{
+        font-size: 14px;
+    }
+    #preview2,#preview4{
+        font-size: 10px;
+    }
+}
+@media (max-width: 550px){
+    #preview1,#preview3{
+        font-size: 8px;
+    }
+    #preview2,#preview4{
+        font-size: 6px;
+    }
+    #secondinn{
+        width: 200px;
+        margin-left: 4em;
+    }
+    #thirdinn{
+        width: 200px;
+        margin-right: 2em;
+    }
+}
+@media (max-width: 1000px){
+    #preview1,#preview3{
+        font-size: 24px;
+    }
+    #preview2,#preview4{
+        font-size: 18px;
+    }
+}
+/*@media (min-width: 950px){
     #preview1,#preview2,#preview3,#preview4{
         font-size: 18px;
     }
@@ -254,6 +305,6 @@ main{
     .leftcontent p{
         font-size: 6px;
     }
-}
+}*/
 /*https://wallpaperaccess.com/full/712422.jpg*/
 /*<i class="fa-thin fa-arrow-right"></i>*/
